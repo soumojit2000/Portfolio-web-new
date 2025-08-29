@@ -1,0 +1,435 @@
+@import url("https://fonts.googleapis.com/css2?family=Michroma&display=swap");
+
+/* font-family: "Michroma", sans-serif; */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+body,
+html {
+  overflow-x: hidden;
+}
+/* common class */
+.section-padding {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.container {
+  max-width: 1240px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 10px 15px;
+}
+/* common element */
+
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+/* navbar */
+.navbar {
+  padding: 0px 15px;
+}
+.nav-link {
+  font-weight: bold;
+}
+.nav-link:hover {
+  color: darkblue;
+  border-bottom: 1px solid blue;
+}
+#navbar.scrolled {
+  box-shadow: 0px 4px 15px rgba(95, 92, 92, 0.363);
+}
+/* banner */
+.banner .container {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.banner-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.banner-content figure img {
+  margin: 0 auto;
+}
+.banner-content h1 {
+  font-size: clamp(14px, 8vw, 48px);
+  margin-bottom: 24px;
+  color: dodgerblue;
+  text-align: center;
+  margin-top: 140px;
+  font-weight: bold;
+}
+.banner-content h2 {
+  font-size: clamp(9px, 4vw, 20px);
+  margin-bottom: 24px;
+  text-align: center;
+}
+/* about */
+.about {
+  background-color: rgb(107, 56, 245);
+}
+.about .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.about h2 {
+  font-family: "Michroma", sans-serif;
+  font-weight: bold;
+  color: white;
+  font-size: clamp(10px, 6vw, 32px);
+  margin-bottom: 24px;
+}
+.about h3 {
+  color: rgb(238, 235, 187);
+  font-size: clamp(7px, 3vw, 20px);
+  max-width: 631px;
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 24px;
+}
+.about h4 {
+  font-family: "Michroma", sans-serif;
+  color: aliceblue;
+  border-bottom: 2px solid blanchedalmond;
+  margin-bottom: 24px;
+  margin-top: 100px;
+  font-size: 26px;
+  text-align: center;
+}
+.about ul{
+  list-style-type: disc;
+}
+.about ul li {
+  margin-bottom: 15px;
+  color: rgb(253, 253, 252);
+  font-weight: bold;
+  text-shadow: 2px 3px 15px rgba(0, 0, 0, 0.849);
+}
+.skills{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/* works */
+
+.works h2 {
+  font-family: "Michroma", sans-serif;
+  font-weight: bolder;
+  margin-bottom: 24px;
+}
+.work h4 {
+  font-size: 24px;
+  margin-bottom: 24px;
+}
+.works h4 span a {
+  color: deepskyblue;
+}
+.work-cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+  padding: 50px;
+  border: none;
+  border-radius: 15px;
+}
+.work-cards h3 {
+  font-size: clamp(6px, 5vw, 23px);
+  opacity: 0;
+}
+.work-cards:hover h3 {
+  opacity: 1;
+}
+.work-btn {
+  border: 2px solid white;
+  padding: 10px 20px;
+  color: white;
+  font-weight: bold;
+  border-radius: 30px;
+}
+.work-btn:hover {
+  background-color: white;
+  color: black;
+}
+.card-1 {
+  background-image: url("../images/drone-img.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  color: white;
+  transition: all 0.8s linear;
+}
+.card-1:hover {
+  background-image: none;
+  background-color: deepskyblue;
+  color: aliceblue;
+}
+.card-2 {
+  background-image: url("../images/NFTs-Logo.avif");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  color: white;
+  transition: all 0.8s linear;
+}
+.card-2:hover {
+  background-image: none;
+  background-color: rgb(119, 0, 255);
+  color: aliceblue;
+}
+.card-3 {
+  background-image: url("../images/car-wah-img.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  color: white;
+  transition: all 0.8s linear;
+}
+.card-3:hover {
+  background-image: none;
+  background-color: rgb(20, 56, 153);
+  color: aliceblue;
+}
+.card-4 {
+  background-image: url("../images/homw-buy-1-img.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  color: white;
+  transition: all 0.8s linear;
+}
+.card-4:hover {
+  background-image: none;
+  background-color: rgb(69, 129, 40);
+  color: aliceblue;
+}
+.card-5 {
+  background-image: url("../images/food-web-img.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  color: white;
+  transition: all 0.8s linear;
+}
+.card-5:hover {
+  background-image: none;
+  background-color: rgb(150, 148, 30);
+  color: aliceblue;
+}
+.card-6 {
+  background-image: url("../images/home-buy-3-img.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  color: white;
+  transition: all 0.8s linear;
+}
+.card-6:hover {
+  background-image: none;
+  background-color: rgb(146, 19, 57);
+  color: aliceblue;
+}
+.see-more {
+  text-align: center;
+}
+.see-more-btn {
+  padding: 15px 30px;
+  border: 2px solid deepskyblue;
+  color: deepskyblue;
+  border-radius: 60px;
+  font-size: clamp(8px, 6vw, 25px);
+  margin-top: 50px;
+  text-align: center;
+  transition: all 0.6s ease;
+}
+.see-more-btn:hover {
+  background-color: deepskyblue;
+  color: white;
+}
+/* partners */
+.logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logos figure img {
+  padding: 40px;
+  transition: all 0.5s ease;
+}
+.logos figure img:hover {
+  scale: (1.1);
+  box-shadow: 3px 4px 15px rgba(102, 99, 99, 0.37);
+}
+/* discuss-form */
+.discuss-form figure img {
+  margin: 0 auto;
+  margin-top: 150px;
+}
+.discuss-form h1 {
+  font-family: "Michroma", sans-serif;
+}
+input,
+select,
+textarea {
+  display: block;
+  width: 60vw;
+  margin: 0 auto;
+  margin-bottom: 25px;
+  padding: 15px;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 2px 5px 15px rgba(128, 125, 125, 0.397);
+}
+label {
+  display: block;
+  width: 60vw;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+.form-btn-div {
+  text-align: center;
+}
+.form-btn {
+  padding: 10px 40px;
+  border: 2px solid dodgerblue;
+  border-radius: 60px;
+  color: dodgerblue;
+  font-size: 25px;
+  transition: all 0.5s ease;
+}
+.form-btn:hover{
+  background-color: dodgerblue;
+  color: white;
+}
+/* collaboration */
+.Collaboration{
+  background-color: bisque;
+}
+.collaboration-btn-div{
+  text-align: center;
+}
+.collaboration-btn{
+  padding: 10px 40px;
+  border: 2px solid blueviolet;
+  border-radius: 60px;
+  color: blueviolet;
+  font-size: 25px;
+  margin-bottom: 50px;
+  transition: all 0.5s ease;
+}
+.collaboration-btn:hover{
+  background-color: blueviolet;
+  color: white;
+}
+.fa-message{
+  margin-right: 10px;
+  color: rgb(43, 226, 141) !important;
+}
+/* footer */
+footer{
+  background-color: rgb(102, 39, 218);
+}
+.footer-contents{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+.footer-contents h2{
+  color: white;
+  margin-bottom: 70px;
+  margin-top: 70px;
+}
+
+.social-icons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.fa-brands, .fa-solid{
+  color: white;
+  font-size: 30px;
+  transition: all 0.5s ease;
+}
+.fa-brands:hover, .fa-solid:hover{
+  color: blueviolet;
+}
+.icon-items{
+  border: 1px solid white;
+  border-radius: 120px;
+  padding: 10px;
+  width: 56px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icon-items:hover{
+  background-color: white;
+  
+}
+.start-project{
+  width: 80vw;
+  background-color: black;
+  color: white;
+  border-radius: 20px;
+  position: relative;
+  bottom: 90px;
+}
+.start-project-card{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+.footer-btn{
+  width: 100%;
+  padding: 14px 20px;
+  border: 2px solid lightgreen;
+  color: white;
+  border-radius: 60px;
+  font-size: clamp(8px,3vw,24px);
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* margin-left: 50px; */
+  transition: all 0.5s ease;
+}
+.footer-btn:hover{
+  background-color: lightgreen;
+  color: black;
+}
+footer h3{
+  color: white;
+}
